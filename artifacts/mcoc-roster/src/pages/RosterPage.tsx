@@ -203,9 +203,12 @@ export default function RosterPage() {
         )}
       </main>
 
-      <footer className="py-8 text-center border-t border-border/50 bg-card/30">
+      <footer className="py-8 text-center border-t border-border/50 bg-card/30 flex flex-col gap-2">
         <p className="text-xs text-muted-foreground/60 max-w-2xl mx-auto px-4 uppercase tracking-wider">
           This is an unofficial fan project. Marvel Contest of Champions, all champion names, and related content are trademarks of Kabam Games, Inc. This site is not affiliated with, endorsed by, or sponsored by Marvel, Disney, or Kabam.
+        </p>
+        <p className="text-xs text-muted-foreground/40 max-w-2xl mx-auto px-4 uppercase tracking-wider">
+          Champion artwork sourced from the Marvel Contest of Champions Fandom Wiki — a fan-made, non-commercial resource. All champion designs and artwork are property of Kabam and Marvel Entertainment.
         </p>
       </footer>
     </div>

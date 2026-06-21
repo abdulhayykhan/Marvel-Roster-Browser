@@ -1,23 +1,22 @@
-import React from "react";
+import { useState } from "react";
 import { Champion } from "@/types/champion";
 import { CLASS_COLORS } from "@/utils/classColors";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import portraitUrls from "@/data/portraitUrls.json";
+import { getProxiedImageUrl } from "@/utils/imageProxy";
 
 interface ChampionCardProps {
   champion: Champion;
 }
 
 function getInitials(name: string): string {
-  // Remove parenthetical variants like (Blue Team)
   const baseName = name.replace(/\s*\(.*?\)\s*/g, '').trim();
   const words = baseName.split(/[\s-]+/);
-  
   if (words.length === 1) {
     return words[0].substring(0, 2).toUpperCase();
   }
-  
   return (words[0][0] + words[words.length - 1][0]).toUpperCase();
 }
 
@@ -25,6 +24,9 @@ export function ChampionCard({ champion }: ChampionCardProps) {
   const isCombined = champion.class === "Combined";
   const color = CLASS_COLORS[champion.class as keyof typeof CLASS_COLORS] || "#ffffff";
   const initials = getInitials(champion.name);
+  const imageUrl = getProxiedImageUrl((portraitUrls as Record<string, string>)[champion.id]);
+  const [imgError, setImgError] = useState(false);
+  const showFallback = !imageUrl || imgError;
 
   return (
     <Link href={`/champion/${champion.id}`}>
@@ -43,28 +45,39 @@ export function ChampionCard({ champion }: ChampionCardProps) {
         {!isCombined && (
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" style={{ boxShadow: `inset 0 0 25px ${color}80` }} />
         )}
-        
-        {/* Initials Area */}
+
+        {/* Image / Initials Area */}
         <div className="relative aspect-square flex items-center justify-center border-b border-white/5 overflow-hidden">
-          {/* Subtle radial gradient background */}
-          <div 
+          {/* Background glow */}
+          <div
             className="absolute inset-0 opacity-20"
             style={{
-              background: isCombined 
-                ? "radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 70%)" 
+              background: isCombined
+                ? "radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 70%)"
                 : `radial-gradient(circle, ${color} 0%, rgba(0,0,0,0) 70%)`
             }}
           />
-          <span 
-            className="text-6xl font-serif font-black z-10 drop-shadow-lg"
-            style={isCombined ? { 
-              background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent"
-            } : { color }}
-          >
-            {initials}
-          </span>
+
+          {showFallback ? (
+            <span
+              className="text-6xl font-black z-10 drop-shadow-lg"
+              style={isCombined ? {
+                background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent"
+              } : { color }}
+            >
+              {initials}
+            </span>
+          ) : (
+            <img
+              src={imageUrl}
+              alt={champion.name}
+              className="absolute inset-0 w-full h-full object-cover object-top z-10"
+              onError={() => setImgError(true)}
+              loading="lazy"
+            />
+          )}
         </div>
 
         {/* Info Area */}

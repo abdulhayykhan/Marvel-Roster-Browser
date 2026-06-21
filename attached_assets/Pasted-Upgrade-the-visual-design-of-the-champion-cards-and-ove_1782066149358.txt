@@ -1,0 +1,52 @@
+Upgrade the visual design of the champion cards and overall UI, keeping the 
+existing class-color system, dataset, routing, and layout structure intact.
+
+CARD REDESIGN — diagonal rarity banner style:
+- Replace the current full-border-glow card with a corner ribbon/banner 
+  treatment: a small diagonal banner in the top-right corner of each card 
+  showing the class name (e.g. "COSMIC", "TECH"), rotated 45deg, in the 
+  class color
+- Card body keeps a thin 1px border in the class color (much subtler than 
+  current), with the class-color glow now appearing only as a soft inset 
+  highlight behind the portrait/initials block, not around the whole card
+- Portrait/initials block: rounded square (not full card height), centered 
+  in the upper portion of the card, with the class color as background tint 
+  at low opacity behind the initials
+- Champion name and release date stay below, same as now
+
+BACKGROUND TEXTURE:
+- Add a very subtle (low opacity, ~3-5%) repeating hexagon or circuit-board 
+  pattern as a background texture behind the full page, beneath the card 
+  grid — should read as texture, not be visually distracting or compete 
+  with the cards
+
+FILTER CHIPS:
+- Add a small relevant icon next to each class filter chip label (e.g. a 
+  bolt/lightning icon for Tech, a flame icon for Skill, a sparkle/star icon 
+  for Cosmic, an atom icon for Science, a paw/claw icon for Mutant, a 
+  swirl/eye icon for Mystic) — use a simple icon library already available 
+  in the project, sized small (16-18px), positioned left of the text label
+- Active filter chip state should now also show a subtle glow matching its 
+  class color, not just a filled background
+
+ANIMATIONS (using Framer Motion, already installed):
+- Add a staggered fade-and-rise animation when cards load or when the 
+  filtered/sorted list changes — cards should animate in sequence with a 
+  small delay between each (e.g. 20-30ms stagger), rising slightly (8-10px) 
+  and fading in, rather than all appearing instantly
+- Add a hover state on cards: slight scale-up (1.02-1.03x) combined with 
+  the class-color glow intensifying, giving tactile "selectable" feedback 
+  like a mobile game roster screen
+- On click, add a brief scale-down "press" animation before navigating to 
+  the detail page, for tactile feedback
+
+Keep all existing functionality (search, filter, sort, year filter, random 
+button, stats bar, detail pages) fully working — this is a visual/animation 
+upgrade only, not a functional rebuild. Test across champions from each 
+class (Cosmic, Tech, Mutant, Skill, Science, Mystic, Combined) to confirm 
+the new card style and colors render correctly for all 330 entries, 
+including the rainbow gradient treatment for Combined-class champions.
+
+Take a full-page screenshot of the updated roster grid in at least 2 
+different filter states (All, and one specific class) to confirm the new 
+design before reporting complete.

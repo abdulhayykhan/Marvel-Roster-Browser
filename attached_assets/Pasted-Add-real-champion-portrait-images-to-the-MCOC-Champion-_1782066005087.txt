@@ -1,0 +1,49 @@
+Add real champion portrait images to the MCOC Champion Roster app, sourced 
+from the Marvel Contest of Champions Fandom wiki.
+
+SOURCE: https://marvel-contestofchampions.fandom.com/wiki/List_of_Champions
+This page's table lists all champions with a linked "portrait" image hosted 
+on static.wikia.nocookie.net. Example confirmed pattern:
+https://static.wikia.nocookie.net/marvel-contestofchampions/images/{hash}/{Champion_Name}_portrait.png/revision/latest?cb={timestamp}
+
+IMPORTANT: The {hash} folder prefix (e.g. "f/f3", "e/e0") and {timestamp} 
+are NOT predictable from the champion name — they must be parsed directly 
+out of each row's image src attribute on the wiki page. Do not attempt to 
+construct these URLs algorithmically.
+
+IMPLEMENTATION:
+1. Fetch https://marvel-contestofchampions.fandom.com/wiki/List_of_Champions 
+   and parse the champions table, extracting each row's champion name (as 
+   linked text) and its corresponding portrait image src URL
+2. Match parsed champion names against the existing 330-entry dataset by 
+   exact name, including parenthetical variants (e.g. "Cyclops (Blue Team)", 
+   "Spider-Man (Miles Morales)", "Wolverine (X-23)") — these must match the 
+   EXACT variant, not the base character name
+3. PERFORM THIS AS A ONE-TIME BUILD-TIME FETCH, not a live runtime fetch on 
+   every page load. Save the resolved {champion_id: image_url} mapping into 
+   a static JSON/data file bundled with the app, so the deployed site does 
+   not depend on fetching the wiki at runtime (avoids breakage if the wiki 
+   changes later, and avoids slow page loads)
+4. Update CharacterCard and the detail page to display the real portrait 
+   image instead of initials, keeping the existing class-color glow border 
+   around the image container
+5. KEEP THE EXISTING INITIALS+GLOW FALLBACK for any champion where no 
+   matching row/image is found on the wiki page — never show a blank or 
+   broken image icon
+6. Use object-fit: cover with object-position: top to avoid awkward 
+   cropping on portrait-style game art
+7. Add attribution in the footer: "Champion artwork sourced from the 
+   Marvel Contest of Champions Fandom Wiki — a fan-made, non-commercial 
+   resource. All champion designs and artwork are property of Kabam and 
+   Marvel Entertainment."
+
+VALIDATION: Before reporting this complete, sample-check at least 15 
+champions across different classes — including variants like "Wolverine 
+(X-23)" vs plain "Wolverine", and at least one Combined-class fusion 
+champion — and confirm the correct image is showing for the correct 
+character (no mismatches). Take a full-page screenshot of the roster grid 
+to confirm. Report how many of the 330 champions successfully resolved an 
+image vs how many fell back to initials.
+
+Do not modify the existing class-color system, layout, or detail page 
+structure beyond adding the image element.

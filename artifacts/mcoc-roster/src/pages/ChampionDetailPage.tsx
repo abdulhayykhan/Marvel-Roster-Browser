@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { useParams, Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, Lock } from "lucide-react";
@@ -6,6 +6,8 @@ import championsData from "@/data/champions.json";
 import { Champion } from "@/types/champion";
 import { CLASS_COLORS } from "@/utils/classColors";
 import { cn } from "@/lib/utils";
+import portraitUrls from "@/data/portraitUrls.json";
+import { getProxiedImageUrl } from "@/utils/imageProxy";
 
 const allChampions: Champion[] = championsData;
 
@@ -78,6 +80,9 @@ export default function ChampionDetailPage() {
   const color = CLASS_COLORS[champion.class as keyof typeof CLASS_COLORS] || "#ffffff";
   const initials = getInitials(champion.name);
   const flavorText = generateFlavorText(champion.name, champion.class);
+  const imageUrl = getProxiedImageUrl((portraitUrls as Record<string, string>)[champion.id]);
+  const [imgError, setImgError] = useState(false);
+  const showFallback = !imageUrl || imgError;
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col relative overflow-hidden">
@@ -104,8 +109,8 @@ export default function ChampionDetailPage() {
       {/* Main Content */}
       <main className="flex-grow container mx-auto px-4 py-8 max-w-6xl relative z-10 flex flex-col lg:flex-row gap-8 items-start">
         
-        {/* Left Col: Giant Initials Display */}
-        <motion.div 
+        {/* Left Col: Portrait Image / Initials Display */}
+        <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           className="w-full lg:w-1/3 aspect-[3/4] relative rounded-2xl overflow-hidden bg-[#050508] border-2 shadow-2xl flex items-center justify-center"
@@ -115,25 +120,35 @@ export default function ChampionDetailPage() {
           } : {}}
         >
           {isCombined && <div className="absolute inset-0 combined-border opacity-50 pointer-events-none" />}
-          
-          <div 
+
+          <div
             className="absolute inset-0 opacity-40 blur-xl"
             style={{
-              background: isCombined 
-                ? "radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 70%)" 
+              background: isCombined
+                ? "radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 70%)"
                 : `radial-gradient(circle, ${color} 0%, rgba(0,0,0,0) 70%)`
             }}
           />
-          <span 
-            className="text-[12rem] md:text-[16rem] font-serif font-black z-10 drop-shadow-2xl leading-none"
-            style={isCombined ? { 
-              background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent"
-            } : { color, textShadow: `0 0 30px ${color}80` }}
-          >
-            {initials}
-          </span>
+
+          {showFallback ? (
+            <span
+              className="text-[12rem] md:text-[16rem] font-black z-10 drop-shadow-2xl leading-none"
+              style={isCombined ? {
+                background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent"
+              } : { color, textShadow: `0 0 30px ${color}80` }}
+            >
+              {initials}
+            </span>
+          ) : (
+            <img
+              src={imageUrl}
+              alt={champion.name}
+              className="absolute inset-0 w-full h-full object-cover object-top z-10"
+              onError={() => setImgError(true)}
+            />
+          )}
         </motion.div>
 
         {/* Right Col: Details */}

@@ -78,11 +78,11 @@ export default function RosterPage() {
           return a.name.localeCompare(b.name);
         case "Name Z-A":
           return b.name.localeCompare(a.name);
-        case "Newest first":
+        case "Release Date (Newest)":
           return new Date(b.release_date).getTime() - new Date(a.release_date).getTime();
-        case "Oldest first":
+        case "Release Date (Oldest)":
           return new Date(a.release_date).getTime() - new Date(b.release_date).getTime();
-        case "Sort by Class":
+        case "Class (Grouped)":
           // Primary: class order, Secondary: name A-Z
           const aIdx = CLASS_ORDER.indexOf(a.class as ChampionClass);
           const bIdx = CLASS_ORDER.indexOf(b.class as ChampionClass);
@@ -112,7 +112,7 @@ export default function RosterPage() {
       .map(cls => ({ className: cls, champions: groups[cls] }));
   }, [filteredChampions, activeClass, searchQuery]);
 
-  const shouldShowHeaders = activeClass === "All" && !searchQuery.trim();
+  const shouldShowHeaders = activeClass === "All" && !searchQuery.trim() && sortBy === "Class (Grouped)";
 
   const handleRandomChampion = () => {
     if (filteredChampions.length > 0) {
@@ -205,9 +205,9 @@ export default function RosterPage() {
               >
                 <option value="Name A-Z">Name A-Z</option>
                 <option value="Name Z-A">Name Z-A</option>
-                <option value="Newest first">Newest First</option>
-                <option value="Oldest first">Oldest First</option>
-                <option value="Sort by Class">Sort by Class</option>
+                <option value="Release Date (Newest)">Release Date (Newest)</option>
+                <option value="Release Date (Oldest)">Release Date (Oldest)</option>
+                <option value="Class (Grouped)">Class (Grouped)</option>
               </select>
             </div>
           </div>

@@ -1,0 +1,42 @@
+Push the UI design further with these specific upgrades, keeping all 
+existing functionality, data, and the class-color/banner system intact:
+
+1. HEXAGON-CLIPPED PORTRAITS:
+   - Change the portrait/image container shape from rounded-square to a 
+     hexagon using CSS clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 
+     5% 75%, 5% 25%)
+   - Apply the class color as a gradient background behind the hexagon 
+     (visible at the clipped edges) so each hexagon has a subtle colored 
+     glow/rim in its class color
+   - Keep the diagonal class banner in the corner of the card as-is
+
+2. SECTION GROUPING FOR "ALL" VIEW:
+   - When the "ALL" filter is active and sort is "Name A-Z" or any class-
+     grouped sort, insert a section header above each class group as you 
+     scroll: class icon + "COSMIC CLASS" (uppercase, Orbitron font) + a 
+     thin colored left border matching the class + champion count for that 
+     class (e.g. "58 champions") in muted gray
+   - Section headers should NOT appear when a single class filter is 
+     active (only relevant when showing mixed/grouped results)
+   - Add a "Sort by Class" option to the sort dropdown that groups all 
+     champions by class with these section headers, since currently 
+     Name A-Z mixes all classes together
+
+3. CARD DEPTH:
+   - Add a subtle inset shadow inside each card container (not just the 
+     portrait) using box-shadow: inset 0 1px 0 rgba(255,255,255,0.05) on 
+     top and a soft outer box-shadow for elevation, so cards feel like 
+     physical panels rather than flat color blocks
+   - Add a soft radial glow in the class color behind each hexagon portrait 
+     (low opacity, large blur radius) for atmospheric depth
+
+4. INCREASE BACKGROUND TEXTURE VISIBILITY:
+   - The hexagon/circuit background texture added previously is barely 
+     visible — increase its opacity slightly (test in the 6-10% range) so 
+     it reads as intentional atmosphere without competing with the cards
+
+Test with the "All" filter showing the full grouped 330-champion list with 
+section headers, and confirm hexagon portraits render correctly with class-
+colored glows across all 7 classes including Combined's rainbow treatment. 
+Screenshot both a single-class filtered view and the full grouped "All" 
+view before reporting complete.

@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, ChevronDown, Shuffle } from "lucide-react";
+import { Search, ChevronDown, Shuffle, Sparkles, Zap, Flame, Eye, Star } from "lucide-react";
+import { FaPaw, FaAtom } from "react-icons/fa6";
 import { ChampionCard } from "@/components/ChampionCard";
 import { ClassFilterChip } from "@/components/ClassFilterChip";
 import { StatsBar } from "@/components/StatsBar";
@@ -10,6 +11,23 @@ import championsData from "@/data/champions.json";
 import { CLASS_COLORS, ChampionClass } from "@/utils/classColors";
 
 const allChampions: Champion[] = championsData;
+
+const CLASS_ORDER: ChampionClass[] = ["Cosmic", "Tech", "Mutant", "Skill", "Science", "Mystic", "Combined"];
+
+const classIcons: Record<string, React.ReactNode> = {
+  "Cosmic": <Sparkles className="w-5 h-5" />,
+  "Tech": <Zap className="w-5 h-5" />,
+  "Mutant": <FaPaw className="w-5 h-5" />,
+  "Skill": <Flame className="w-5 h-5" />,
+  "Science": <FaAtom className="w-5 h-5" />,
+  "Mystic": <Eye className="w-5 h-5" />,
+  "Combined": <Star className="w-5 h-5" />,
+};
+
+interface GroupedChampions {
+  className: ChampionClass;
+  champions: Champion[];
+}
 
 export default function RosterPage() {
   const [, setLocation] = useLocation();
@@ -64,6 +82,12 @@ export default function RosterPage() {
           return new Date(b.release_date).getTime() - new Date(a.release_date).getTime();
         case "Oldest first":
           return new Date(a.release_date).getTime() - new Date(b.release_date).getTime();
+        case "Sort by Class":
+          // Primary: class order, Secondary: name A-Z
+          const aIdx = CLASS_ORDER.indexOf(a.class as ChampionClass);
+          const bIdx = CLASS_ORDER.indexOf(b.class as ChampionClass);
+          if (aIdx !== bIdx) return aIdx - bIdx;
+          return a.name.localeCompare(b.name);
         default:
           return 0;
       }
@@ -71,6 +95,24 @@ export default function RosterPage() {
 
     return sorted;
   }, [searchQuery, activeClass, sortBy, releaseYear]);
+
+  const groupedChampions = useMemo((): GroupedChampions[] => {
+    if (activeClass !== "All" || searchQuery.trim()) {
+      return [{ className: activeClass as ChampionClass || "Cosmic", champions: filteredChampions }];
+    }
+
+    const groups: Record<string, Champion[]> = {};
+    filteredChampions.forEach(c => {
+      if (!groups[c.class]) groups[c.class] = [];
+      groups[c.class].push(c);
+    });
+
+    return CLASS_ORDER
+      .filter(cls => groups[cls] && groups[cls].length > 0)
+      .map(cls => ({ className: cls, champions: groups[cls] }));
+  }, [filteredChampions, activeClass, searchQuery]);
+
+  const shouldShowHeaders = activeClass === "All" && !searchQuery.trim();
 
   const handleRandomChampion = () => {
     if (filteredChampions.length > 0) {
@@ -165,6 +207,7 @@ export default function RosterPage() {
                 <option value="Name Z-A">Name Z-A</option>
                 <option value="Newest first">Newest First</option>
                 <option value="Oldest first">Oldest First</option>
+                <option value="Sort by Class">Sort by Class</option>
               </select>
             </div>
           </div>
@@ -177,23 +220,96 @@ export default function RosterPage() {
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 md:gap-6">
-          <AnimatePresence mode="popLayout">
-            {filteredChampions.map((champion, idx) => (
-              <motion.div
-                key={champion.id}
-                layout
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                transition={{ duration: 0.25, delay: Math.min(idx * 0.025, 0.5) }}
-              >
-                <ChampionCard champion={champion} index={idx} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </div>
+        {/* Grid with optional section headers */}
+        {shouldShowHeaders ? (
+          <div className="flex flex-col gap-8">
+            <AnimatePresence mode="popLayout">
+              {groupedChampions.map((group) => {
+                const color = CLASS_COLORS[group.className];
+                const isCombined = group.className === "Combined";
+                const icon = classIcons[group.className];
+                const globalIndex = filteredChampions.findIndex(c => c.id === group.champions[0].id);
+
+                return (
+                  <motion.div
+                    key={group.className}
+                    layout
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.3 }}
+                    className="flex flex-col gap-4"
+                  >
+                    {/* Section Header */}
+                    <div
+                      className="flex items-center gap-3 pl-4 border-l-4 py-2"
+                      style={{
+                        borderLeftColor: isCombined ? "transparent" : color,
+                        borderImage: isCombined
+                          ? "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60) 1"
+                          : undefined,
+                      }}
+                    >
+                      <span style={isCombined ? {
+                        background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      } : { color }}>
+                        {icon}
+                      </span>
+                      <h2
+                        className="text-xl md:text-2xl font-black uppercase tracking-widest font-serif"
+                        style={isCombined ? {
+                          background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                        } : { color }}
+                      >
+                        {group.className} Class
+                      </h2>
+                      <span className="text-sm text-muted-foreground font-semibold">
+                        {group.champions.length} champions
+                      </span>
+                    </div>
+
+                    {/* Grid for this group */}
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 md:gap-6">
+                      {group.champions.map((champion, idx) => (
+                        <motion.div
+                          key={champion.id}
+                          layout
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          transition={{ duration: 0.25, delay: Math.min(idx * 0.025, 0.5) }}
+                        >
+                          <ChampionCard champion={champion} index={globalIndex + idx} />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </AnimatePresence>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 md:gap-6">
+            <AnimatePresence mode="popLayout">
+              {filteredChampions.map((champion, idx) => (
+                <motion.div
+                  key={champion.id}
+                  layout
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.25, delay: Math.min(idx * 0.025, 0.5) }}
+                >
+                  <ChampionCard champion={champion} index={idx} />
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </div>
+        )}
 
         {filteredChampions.length === 0 && (
           <div className="py-20 text-center flex flex-col items-center">

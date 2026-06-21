@@ -12,6 +12,8 @@ interface ChampionCardProps {
   index?: number;
 }
 
+const HEX_CLIP = "polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)";
+
 function getInitials(name: string): string {
   const baseName = name.replace(/\s*\(.*?\)\s*/g, "").trim();
   const words = baseName.split(/[\s-]+/);
@@ -54,7 +56,10 @@ export function ChampionCard({ champion, index = 0 }: ChampionCardProps) {
         )}
         style={!isCombined ? {
           border: `1px solid ${color}44`,
-        } : {}}
+          boxShadow: `inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 16px rgba(0,0,0,0.4)`,
+        } : {
+          boxShadow: `inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 16px rgba(0,0,0,0.4)`,
+        }}
       >
         {/* Hover glow — intensifies on hover */}
         {!isCombined && (
@@ -90,53 +95,71 @@ export function ChampionCard({ champion, index = 0 }: ChampionCardProps) {
           {champion.class}
         </div>
 
-        {/* Portrait / Initials Block */}
-        <div className="relative mx-auto mt-4 w-[70%] aspect-square rounded-xl overflow-hidden border border-white/5">
-          {/* Soft inset glow behind portrait */}
+        {/* Hexagon Portrait Container */}
+        <div className="relative mx-auto mt-5 w-[75%] aspect-[1/1.1] flex items-center justify-center">
+          {/* Radial glow behind hexagon */}
           <div
-            className="absolute inset-0 opacity-15"
+            className="absolute inset-0 opacity-20 blur-2xl pointer-events-none"
             style={{
               background: isCombined
-                ? "radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(0,0,0,0) 70%)"
+                ? "radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 70%)"
                 : `radial-gradient(circle, ${color} 0%, rgba(0,0,0,0) 70%)`,
             }}
           />
-          {/* Background tint for initials */}
-          {showFallback && (
-            <div
-              className="absolute inset-0 opacity-10"
-              style={{
-                background: isCombined
-                  ? "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)"
-                  : color,
-              }}
-            />
-          )}
 
-          {showFallback ? (
-            <span
-              className="absolute inset-0 flex items-center justify-center text-4xl font-black z-10 drop-shadow-lg"
-              style={isCombined ? {
-                background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              } : { color }}
-            >
-              {initials}
-            </span>
-          ) : (
-            <img
-              src={imageUrl}
-              alt={champion.name}
-              className="absolute inset-0 w-full h-full object-cover object-top z-10"
-              onError={() => setImgError(true)}
-              loading="lazy"
-            />
-          )}
+          {/* Gradient background behind hexagon (visible at clipped edges) */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: isCombined
+                ? "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)"
+                : `linear-gradient(135deg, ${color}cc, ${color}66)`,
+              clipPath: HEX_CLIP,
+            }}
+          />
+
+          {/* Hexagon portrait / initials */}
+          <div
+            className="absolute inset-[3px] bg-[#0a0a0f] overflow-hidden"
+            style={{ clipPath: HEX_CLIP }}
+          >
+            {/* Inner glow for initials */}
+            {showFallback && (
+              <div
+                className="absolute inset-0 opacity-10"
+                style={{
+                  background: isCombined
+                    ? "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)"
+                    : color,
+                }}
+              />
+            )}
+
+            {showFallback ? (
+              <span
+                className="absolute inset-0 flex items-center justify-center text-3xl font-black z-10 drop-shadow-lg"
+                style={isCombined ? {
+                  background: "linear-gradient(45deg, #7B2FF7, #00C2FF, #FFC107, #E53935, #43A047, #D81B60)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                } : { color }}
+              >
+                {initials}
+              </span>
+            ) : (
+              <img
+                src={imageUrl}
+                alt={champion.name}
+                className="absolute inset-0 w-full h-full object-cover object-top z-10"
+                onError={() => setImgError(true)}
+                loading="lazy"
+              />
+            )}
+          </div>
         </div>
 
         {/* Info Area */}
-        <div className="p-3 flex flex-col items-center text-center flex-grow">
+        <div className="p-3 pt-2 flex flex-col items-center text-center flex-grow">
           <h3 className="font-bold text-sm leading-tight mb-1 line-clamp-2 uppercase tracking-wide">
             {champion.name}
           </h3>

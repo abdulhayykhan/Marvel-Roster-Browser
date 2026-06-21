@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MCOC Champion Roster"
+version = "1.0.0"
+id = "artifacts/mcoc-roster"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22444
+
+[services.development]
+run = "pnpm --filter @workspace/mcoc-roster run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mcoc-roster", "run", "build" ]
+publicDir = "artifacts/mcoc-roster/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22444"
+BASE_PATH = "/"

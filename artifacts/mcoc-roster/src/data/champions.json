@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "groot",
+    "name": "Groot",
+    "class": "Cosmic",
+    "release_date": "December 24, 2015"
+  },
+  {
+    "id": "spider-man-miles-morales",
+    "name": "Spider-Man (Miles Morales)",
+    "class": "Science",
+    "release_date": "January 7, 2016"
+  },
+  {
+    "id": "cyclops-blue-team",
+    "name": "Cyclops (Blue Team)",
+    "class": "Mutant",
+    "release_date": "January 21, 2016"
+  },
+  {
+    "id": "old-man-logan",
+    "name": "Old Man Logan",
+    "class": "Mutant",
+    "release_date": "February 4, 2016"
+  },
+  {
+    "id": "venompool",
+    "name": "Venompool",
+    "class": "Cosmic",
+    "release_date": "February 18, 2016"
+  },
+  {
+    "id": "she-hulk",
+    "name": "She-Hulk",
+    "class": "Science",
+    "release_date": "March 3, 2016"
+  },
+  {
+    "id": "wolverine-x-23",
+    "name": "Wolverine (X-23)",
+    "class": "Mutant",
+    "release_date": "March 17, 2016"
+  },
+  {
+    "id": "ms-marvel-kamala-khan",
+    "name": "Ms. Marvel (Kamala Khan)",
+    "class": "Cosmic",
+    "release_date": "March 31, 2016"
+  },
+  {
+    "id": "agent-venom",
+    "name": "Agent Venom",
+    "class": "Skill",
+    "release_date": "April 14, 2016"
+  },
+  {
+    "id": "red-hulk",
+    "name": "Red Hulk",
+    "class": "Science",
+    "release_date": "April 28, 2016"
+  },
+  {
+    "id": "crossbones",
+    "name": "Crossbones",
+    "class": "Skill",
+    "release_date": "May 12, 2016"
+  },
+  {
+    "id": "black-panther-civil-war",
+    "name": "Black Panther (Civil War)",
+    "class": "Skill",
+    "release_date": "May 26, 2016"
+  },
+  {
+    "id": "falcon",
+    "name": "Falcon",
+    "class": "Skill",
+    "release_date": "June 9, 2016"
+  },
+  {
+    "id": "civil-warrior",
+    "name": "Civil Warrior",
+    "class": "Tech",
+    "release_date": "June 30, 2016"
+  },
+  {
+    "id": "nightcrawler",
+    "name": "Nightcrawler",
+    "class": "Mutant",
+    "release_date": "July 7, 2016"
+  },
+  {
+    "id": "iron-fist-immortal",
+    "name": "Iron Fist (Immortal)",
+    "class": "Mystic",
+    "release_date": "August 20, 2015"
+  },
+  {
+    "id": "loki",
+    "name": "Loki",
+    "class": "Mystic",
+    "release_date": "August 4, 2016"
+  },
+  {
+    "id": "gambit",
+    "name": "Gambit",
+    "class": "Mutant",
+    "release_date": "August 18, 2016"
+  },
+  {
+    "id": "karnak",
+    "name": "Karnak",
+    "class": "Skill",
+    "release_date": "September 1, 2016"
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "class": "Mutant",
+    "release_date": "September 15, 2016"
+  },
+  {
+    "id": "quake",
+    "name": "Quake",
+    "class": "Science",
+    "release_date": "September 29, 2016"
+  },
+  {
+    "id": "ultron-classic",
+    "name": "Ultron (Classic)",
+    "class": "Tech",
+    "release_date": "August 17, 2016"
+  },
+  {
+    "id": "phoenix",
+    "name": "Phoenix",
+    "class": "Cosmic",
+    "release_date": "October 13, 2016"
+  },
+  {
+    "id": "ghost-rider",
+    "name": "Ghost Rider",
+    "class": "Mystic",
+    "release_date": "October 27, 2016"
+  },
+  {
+    "id": "mordo",
+    "name": "Mordo",
+    "class": "Mystic",
+    "release_date": "November 10, 2016"
+  },
+  {
+    "id": "doctor-voodoo",
+    "name": "Doctor Voodoo",
+    "class": "Mystic",
+    "release_date": "November 24, 2016"
+  },
+  {
+    "id": "hyperion",
+    "name": "Hyperion",
+    "class": "Cosmic",
+    "release_date": "December 8, 2016"
+  },
+  {
+    "id": "howard-the-duck",
+    "name": "Howard the Duck",
+    "class": "Tech",
+    "release_date": "December 22, 2016"
+  },
+  {
+    "id": "gwenpool",
+    "name": "Gwenpool",
+    "class": "Skill",
+    "release_date": "January 5, 2017"
+  },
+  {
+    "id": "cable",
+    "name": "Cable",
+    "class": "Mutant",
+    "release_date": "January 19, 2017"
+  },
+  {
+    "id": "the-hood",
+    "name": "The Hood",
+    "class": "Mystic",
+    "release_date": "February 2, 2017"
+  },
+  {
+    "id": "iceman",
+    "name": "Iceman",
+    "class": "Mutant",
+    "release_date": "March 30, 2017"
+  },
+  {
+    "id": "dormammu",
+    "name": "Dormammu",
+    "class": "Mystic",
+    "release_date": "February 16, 2017"
+  },
+  {
+    "id": "archangel",
+    "name": "Archangel",
+    "class": "Mutant",
+    "release_date": "March 2, 2017"
+  },
+  {
+    "id": "spider-man-stark-enhanced",
+    "name": "Spider-Man (Stark Enhanced)",
+    "class": "Tech",
+    "release_date": "July 6, 2017"
+  },
+  {
+    "id": "vulture",
+    "name": "Vulture",
+    "class": "Tech",
+    "release_date": "July 20, 2017"
+  },
+  {
+    "id": "nebula",
+    "name": "Nebula",
+    "class": "Tech",
+    "release_date": "May 11, 2017"
+  },
+  {
+    "id": "angela",
+    "name": "Angela",
+    "class": "Cosmic",
+    "release_date": "April 13, 2017"
+  },
+  {
+    "id": "carnage",
+    "name": "Carnage",
+    "class": "Cosmic",
+    "release_date": "June 8, 2017"
+  },
+  {
+    "id": "king-groot",
+    "name": "King Groot",
+    "class": "Cosmic",
+    "release_date": "April 27, 2017"
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "class": "Cosmic",
+    "release_date": "September 14, 2017"
+  },
+  {
+    "id": "morningstar",
+    "name": "Morningstar",
+    "class": "Mystic",
+    "release_date": "October 12, 2017"
+  },
+  {
+    "id": "m-o-d-o-k",
+    "name": "M.O.D.O.K.",
+    "class": "Science",
+    "release_date": "December 21, 2017"
+  },
+  {
+    "id": "mephisto",
+    "name": "Mephisto",
+    "class": "Mystic",
+    "release_date": "September 28, 2017"
+  },
+  {
+    "id": "psylocke",
+    "name": "Psylocke",
+    "class": "Mutant",
+    "release_date": "March 16, 2017"
+  },
+  {
+    "id": "kingpin",
+    "name": "Kingpin",
+    "class": "Skill",
+    "release_date": "August 31, 2017"
+  },
+  {
+    "id": "hela",
+    "name": "Hela",
+    "class": "Cosmic",
+    "release_date": "November 23, 2017"
+  },
+  {
+    "id": "thor-ragnarok",
+    "name": "Thor (Ragnarok)",
+    "class": "Skill",
+    "release_date": "November 9, 2017"
+  },
+  {
+    "id": "hulk-ragnarok",
+    "name": "Hulk (Ragnarok)",
+    "class": "Science",
+    "release_date": "February 1, 2018"
+  },
+  {
+    "id": "sabretooth",
+    "name": "Sabretooth",
+    "class": "Mutant",
+    "release_date": "March 29, 2018"
+  },
+  {
+    "id": "doctor-octopus",
+    "name": "Doctor Octopus",
+    "class": "Tech",
+    "release_date": "August 17, 2017"
+  },
+  {
+    "id": "bishop",
+    "name": "Bishop",
+    "class": "Mutant",
+    "release_date": "March 14, 2018"
+  },
+  {
+    "id": "taskmaster",
+    "name": "Taskmaster",
+    "class": "Skill",
+    "release_date": "December 7, 2017"
+  },
+  {
+    "id": "yondu",
+    "name": "Yondu",
+    "class": "Tech",
+    "release_date": "May 25, 2017"
+  },
+  {
+    "id": "captain-america-infinity-war",
+    "name": "Captain America (Infinity War)",
+    "class": "Science",
+    "release_date": "May 10, 2018"
+  },
+  {
+    "id": "green-goblin",
+    "name": "Green Goblin",
+    "class": "Tech",
+    "release_date": "August 3, 2017"
+  },
+  {
+    "id": "yellowjacket",
+    "name": "Yellowjacket",
+    "class": "Science",
+    "release_date": "July 30, 2015"
+  },
+  {
+    "id": "ant-man",
+    "name": "Ant-Man",
+    "class": "Science",
+    "release_date": "July 9, 2015"
+  },
+  {
+    "id": "domino",
+    "name": "Domino",
+    "class": "Mutant",
+    "release_date": "June 7, 2018"
+  },
+  {
+    "id": "deadpool",
+    "name": "Deadpool",
+    "class": "Mutant",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "colossus",
+    "name": "Colossus",
+    "class": "Mutant",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "cyclops-new-xavier-school",
+    "name": "Cyclops (New Xavier School)",
+    "class": "Mutant",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "class": "Mutant",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "magneto",
+    "name": "Magneto",
+    "class": "Mutant",
+    "release_date": "June 18, 2015"
+  },
+  {
+    "id": "deadpool-x-force",
+    "name": "Deadpool (X-Force)",
+    "class": "Mutant",
+    "release_date": "September 17, 2015"
+  },
+  {
+    "id": "symbioid",
+    "name": "Symbioid",
+    "class": "Combined",
+    "release_date": "October 8, 2025"
+  },
+  {
+    "id": "goldpool",
+    "name": "Goldpool",
+    "class": "Mutant",
+    "release_date": "June 6, 2018"
+  },
+  {
+    "id": "magik",
+    "name": "Magik",
+    "class": "Mystic",
+    "release_date": "January 22, 2015"
+  },
+  {
+    "id": "blade",
+    "name": "Blade",
+    "class": "Skill",
+    "release_date": "October 26, 2017"
+  },
+  {
+    "id": "winter-soldier",
+    "name": "Winter Soldier",
+    "class": "Skill",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "black-panther",
+    "name": "Black Panther",
+    "class": "Skill",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "daredevil-classic",
+    "name": "Daredevil (Classic)",
+    "class": "Skill",
+    "release_date": "April 16, 2015"
+  },
+  {
+    "id": "moon-knight",
+    "name": "Moon Knight",
+    "class": "Skill",
+    "release_date": "September 24, 2015"
+  },
+  {
+    "id": "elektra",
+    "name": "Elektra",
+    "class": "Skill",
+    "release_date": "October 8, 2015"
+  },
+  {
+    "id": "wasp",
+    "name": "Wasp",
+    "class": "Science",
+    "release_date": "July 5, 2018"
+  },
+  {
+    "id": "captain-america",
+    "name": "Captain America",
+    "class": "Science",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "electro",
+    "name": "Electro",
+    "class": "Science",
+    "release_date": "February 6, 2015"
+  },
+  {
+    "id": "joe-fixit",
+    "name": "Joe Fixit",
+    "class": "Science",
+    "release_date": "October 15, 2015"
+  },
+  {
+    "id": "killmonger",
+    "name": "Killmonger",
+    "class": "Skill",
+    "release_date": "February 15, 2018"
+  },
+  {
+    "id": "black-bolt",
+    "name": "Black Bolt",
+    "class": "Cosmic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "gamora",
+    "name": "Gamora",
+    "class": "Cosmic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "ronan",
+    "name": "Ronan",
+    "class": "Cosmic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "thanos",
+    "name": "Thanos",
+    "class": "Cosmic",
+    "release_date": "August 17, 2016"
+  },
+  {
+    "id": "ms-marvel",
+    "name": "Ms. Marvel",
+    "class": "Cosmic",
+    "release_date": "April 2, 2015"
+  },
+  {
+    "id": "spider-man-symbiote",
+    "name": "Spider-Man (Symbiote)",
+    "class": "Cosmic",
+    "release_date": "September 10, 2015"
+  },
+  {
+    "id": "iron-fist",
+    "name": "Iron Fist",
+    "class": "Mystic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "unstoppable-colossus",
+    "name": "Unstoppable Colossus",
+    "class": "Mystic",
+    "release_date": "February 25, 2015"
+  },
+  {
+    "id": "guillotine",
+    "name": "Guillotine",
+    "class": "Mystic",
+    "release_date": "October 22, 2015"
+  },
+  {
+    "id": "thor-jane-foster",
+    "name": "Thor (Jane Foster)",
+    "class": "Mystic",
+    "release_date": "December 10, 2015"
+  },
+  {
+    "id": "iron-man",
+    "name": "Iron Man",
+    "class": "Tech",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "vision",
+    "name": "Vision",
+    "class": "Tech",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "star-lord",
+    "name": "Star-Lord",
+    "class": "Tech",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "ultron",
+    "name": "Ultron",
+    "class": "Tech",
+    "release_date": "June 4, 2015"
+  },
+  {
+    "id": "hulkbuster",
+    "name": "Hulkbuster",
+    "class": "Tech",
+    "release_date": "May 21, 2015"
+  },
+  {
+    "id": "iron-patriot",
+    "name": "Iron Patriot",
+    "class": "Tech",
+    "release_date": "July 2, 2015"
+  },
+  {
+    "id": "vision-age-of-ultron",
+    "name": "Vision (Age of Ultron)",
+    "class": "Tech",
+    "release_date": "May 14, 2015"
+  },
+  {
+    "id": "war-machine",
+    "name": "War Machine",
+    "class": "Tech",
+    "release_date": "August 13, 2015"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "class": "Tech",
+    "release_date": "July 19, 2018"
+  },
+  {
+    "id": "sentinel",
+    "name": "Sentinel",
+    "class": "Tech",
+    "release_date": "March 1, 2018"
+  },
+  {
+    "id": "masacre",
+    "name": "Masacre",
+    "class": "Skill",
+    "release_date": "June 21, 2018"
+  },
+  {
+    "id": "iron-man-infinity-war",
+    "name": "Iron Man (Infinity War)",
+    "class": "Tech",
+    "release_date": "May 24, 2018"
+  },
+  {
+    "id": "corvus-glaive",
+    "name": "Corvus Glaive",
+    "class": "Cosmic",
+    "release_date": "April 26, 2018"
+  },
+  {
+    "id": "proxima-midnight",
+    "name": "Proxima Midnight",
+    "class": "Cosmic",
+    "release_date": "April 12, 2018"
+  },
+  {
+    "id": "wolverine-weapon-x",
+    "name": "Wolverine (Weapon X)",
+    "class": "Mutant",
+    "release_date": "March 11, 2020"
+  },
+  {
+    "id": "heimdall",
+    "name": "Heimdall",
+    "class": "Cosmic",
+    "release_date": "August 16, 2018"
+  },
+  {
+    "id": "korg",
+    "name": "Korg",
+    "class": "Skill",
+    "release_date": "August 30, 2018"
+  },
+  {
+    "id": "red-skull",
+    "name": "Red Skull",
+    "class": "Tech",
+    "release_date": "August 2, 2018"
+  },
+  {
+    "id": "omega-red",
+    "name": "Omega Red",
+    "class": "Mutant",
+    "release_date": "September 13, 2018"
+  },
+  {
+    "id": "gon",
+    "name": "\u00c6gon",
+    "class": "Skill",
+    "release_date": "November 22, 2018"
+  },
+  {
+    "id": "summoned-symbioid",
+    "name": "Summoned Symbioid",
+    "class": "Combined",
+    "release_date": "October 2, 2018"
+  },
+  {
+    "id": "thing",
+    "name": "Thing",
+    "class": "Science",
+    "release_date": "January 10, 2019"
+  },
+  {
+    "id": "diablo",
+    "name": "Diablo",
+    "class": "Mystic",
+    "release_date": "January 24, 2019"
+  },
+  {
+    "id": "captain-marvel-classic",
+    "name": "Captain Marvel (Classic)",
+    "class": "Cosmic",
+    "release_date": "January 8, 2015"
+  },
+  {
+    "id": "captain-marvel",
+    "name": "Captain Marvel",
+    "class": "Cosmic",
+    "release_date": "March 7, 2019"
+  },
+  {
+    "id": "venom",
+    "name": "Venom",
+    "class": "Cosmic",
+    "release_date": "October 29, 2015"
+  },
+  {
+    "id": "ronin",
+    "name": "Ronin",
+    "class": "Skill",
+    "release_date": "May 2, 2019"
+  },
+  {
+    "id": "cull-obsidian",
+    "name": "Cull Obsidian",
+    "class": "Cosmic",
+    "release_date": "May 16, 2019"
+  },
+  {
+    "id": "ebony-maw",
+    "name": "Ebony Maw",
+    "class": "Mystic",
+    "release_date": "May 31, 2019"
+  },
+  {
+    "id": "human-torch",
+    "name": "Human Torch",
+    "class": "Science",
+    "release_date": "April 18, 2019"
+  },
+  {
+    "id": "annihilus",
+    "name": "Annihilus",
+    "class": "Cosmic",
+    "release_date": "April 4, 2019"
+  },
+  {
+    "id": "nick-fury",
+    "name": "Nick Fury",
+    "class": "Skill",
+    "release_date": "March 12, 2019"
+  },
+  {
+    "id": "havok",
+    "name": "Havok",
+    "class": "Mutant",
+    "release_date": "February 7, 2019"
+  },
+  {
+    "id": "mister-sinister",
+    "name": "Mister Sinister",
+    "class": "Mutant",
+    "release_date": "February 11, 2019"
+  },
+  {
+    "id": "punisher-2099",
+    "name": "Punisher 2099",
+    "class": "Tech",
+    "release_date": "June 29, 2017"
+  },
+  {
+    "id": "invisible-woman",
+    "name": "Invisible Woman",
+    "class": "Science",
+    "release_date": "June 27, 2019"
+  },
+  {
+    "id": "namor",
+    "name": "Namor",
+    "class": "Mutant",
+    "release_date": "June 13, 2019"
+  },
+  {
+    "id": "mysterio",
+    "name": "Mysterio",
+    "class": "Tech",
+    "release_date": "July 25, 2019"
+  },
+  {
+    "id": "spider-man-stealth-suit",
+    "name": "Spider-Man (Stealth Suit)",
+    "class": "Skill",
+    "release_date": "July 11, 2019"
+  },
+  {
+    "id": "spider-man-classic",
+    "name": "Spider-Man (Classic)",
+    "class": "Science",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "sunspot",
+    "name": "Sunspot",
+    "class": "Mutant",
+    "release_date": "August 8, 2019"
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "class": "Tech",
+    "release_date": "August 22, 2019"
+  },
+  {
+    "id": "vision-aarkus",
+    "name": "Vision (Aarkus)",
+    "class": "Cosmic",
+    "release_date": "September 19, 2019"
+  },
+  {
+    "id": "emma-frost",
+    "name": "Emma Frost",
+    "class": "Mutant",
+    "release_date": "September 27, 2018"
+  },
+  {
+    "id": "beast",
+    "name": "Beast",
+    "class": "Mutant",
+    "release_date": "July 21, 2016"
+  },
+  {
+    "id": "black-widow-claire-voyant",
+    "name": "Black Widow (Claire Voyant)",
+    "class": "Mystic",
+    "release_date": "September 5, 2019"
+  },
+  {
+    "id": "doctor-doom",
+    "name": "Doctor Doom",
+    "class": "Mystic",
+    "release_date": "November 14, 2019"
+  },
+  {
+    "id": "elsa-bloodstone",
+    "name": "Elsa Bloodstone",
+    "class": "Skill",
+    "release_date": "October 3, 2019"
+  },
+  {
+    "id": "man-thing",
+    "name": "Man-Thing",
+    "class": "Mystic",
+    "release_date": "October 17, 2019"
+  },
+  {
+    "id": "mister-fantastic",
+    "name": "Mister Fantastic",
+    "class": "Science",
+    "release_date": "November 28, 2019"
+  },
+  {
+    "id": "guillotine-2099",
+    "name": "Guillotine 2099",
+    "class": "Tech",
+    "release_date": "October 31, 2019"
+  },
+  {
+    "id": "silver-surfer",
+    "name": "Silver Surfer",
+    "class": "Cosmic",
+    "release_date": "December 12, 2019"
+  },
+  {
+    "id": "squirrel-girl",
+    "name": "Squirrel Girl",
+    "class": "Skill",
+    "release_date": "January 9, 2020"
+  },
+  {
+    "id": "nova",
+    "name": "Nova",
+    "class": "Cosmic",
+    "release_date": "January 23, 2020"
+  },
+  {
+    "id": "longshot",
+    "name": "Longshot",
+    "class": "Mystic",
+    "release_date": "February 13, 2020"
+  },
+  {
+    "id": "mojo",
+    "name": "Mojo",
+    "class": "Mystic",
+    "release_date": "February 27, 2020"
+  },
+  {
+    "id": "mole-man",
+    "name": "Mole Man",
+    "class": "Skill",
+    "release_date": "March 12, 2020"
+  },
+  {
+    "id": "terrax",
+    "name": "Terrax",
+    "class": "Cosmic",
+    "release_date": "March 26, 2020"
+  },
+  {
+    "id": "storm-pyramid-x",
+    "name": "Storm (Pyramid X)",
+    "class": "Mutant",
+    "release_date": "April 23, 2020"
+  },
+  {
+    "id": "sorcerer-supreme",
+    "name": "Sorcerer Supreme",
+    "class": "Mystic",
+    "release_date": "April 9, 2020"
+  },
+  {
+    "id": "red-guardian",
+    "name": "Red Guardian",
+    "class": "Science",
+    "release_date": "May 28, 2020"
+  },
+  {
+    "id": "black-widow-deadly-origin",
+    "name": "Black Widow (Deadly Origin)",
+    "class": "Skill",
+    "release_date": "May 14, 2020"
+  },
+  {
+    "id": "tigra",
+    "name": "Tigra",
+    "class": "Mystic",
+    "release_date": "June 11, 2020"
+  },
+  {
+    "id": "hit-monkey",
+    "name": "Hit-Monkey",
+    "class": "Skill",
+    "release_date": "June 25, 2020"
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "class": "Tech",
+    "release_date": "July 9, 2020"
+  },
+  {
+    "id": "sasquatch",
+    "name": "Sasquatch",
+    "class": "Mystic",
+    "release_date": "July 23, 2020"
+  },
+  {
+    "id": "dragon-man",
+    "name": "Dragon Man",
+    "class": "Mystic",
+    "release_date": "August 27, 2020"
+  },
+  {
+    "id": "platinumpool",
+    "name": "Platinumpool",
+    "class": "Mutant",
+    "release_date": "September 2, 2020"
+  },
+  {
+    "id": "air-walker",
+    "name": "Air-Walker",
+    "class": "Cosmic",
+    "release_date": "August 13, 2020"
+  },
+  {
+    "id": "magneto-house-of-x",
+    "name": "Magneto (House of X)",
+    "class": "Mutant",
+    "release_date": "August 27, 2015"
+  },
+  {
+    "id": "professor-x",
+    "name": "Professor X",
+    "class": "Mutant",
+    "release_date": "September 10, 2020"
+  },
+  {
+    "id": "apocalypse",
+    "name": "Apocalypse",
+    "class": "Mutant",
+    "release_date": "September 24, 2020"
+  },
+  {
+    "id": "cosmic-ghost-rider",
+    "name": "Cosmic Ghost Rider",
+    "class": "Cosmic",
+    "release_date": "October 22, 2020"
+  },
+  {
+    "id": "red-goblin",
+    "name": "Red Goblin",
+    "class": "Cosmic",
+    "release_date": "October 8, 2020"
+  },
+  {
+    "id": "hulk-immortal",
+    "name": "Hulk (Immortal)",
+    "class": "Science",
+    "release_date": "November 12, 2020"
+  },
+  {
+    "id": "abomination-immortal",
+    "name": "Abomination (Immortal)",
+    "class": "Science",
+    "release_date": "November 26, 2020"
+  },
+  {
+    "id": "daredevil-hell-s-kitchen",
+    "name": "Daredevil (Hell's Kitchen)",
+    "class": "Skill",
+    "release_date": "November 19, 2015"
+  },
+  {
+    "id": "scarlet-witch-classic",
+    "name": "Scarlet Witch (Classic)",
+    "class": "Mystic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "spider-ham",
+    "name": "Spider-Ham",
+    "class": "Science",
+    "release_date": "December 10, 2020"
+  },
+  {
+    "id": "jubilee",
+    "name": "Jubilee",
+    "class": "Mutant",
+    "release_date": "January 14, 2021"
+  },
+  {
+    "id": "stryfe",
+    "name": "Stryfe",
+    "class": "Mutant",
+    "release_date": "January 28, 2021"
+  },
+  {
+    "id": "jessica-jones",
+    "name": "Jessica Jones",
+    "class": "Science",
+    "release_date": "December 22, 2022"
+  },
+  {
+    "id": "psycho-man",
+    "name": "Psycho-Man",
+    "class": "Tech",
+    "release_date": "February 11, 2021"
+  },
+  {
+    "id": "super-skrull",
+    "name": "Super-Skrull",
+    "class": "Cosmic",
+    "release_date": "February 25, 2021"
+  },
+  {
+    "id": "mangog",
+    "name": "Mangog",
+    "class": "Mystic",
+    "release_date": "March 11, 2021"
+  },
+  {
+    "id": "odin",
+    "name": "Odin",
+    "class": "Cosmic",
+    "release_date": "March 25, 2021"
+  },
+  {
+    "id": "scarlet-witch",
+    "name": "Scarlet Witch",
+    "class": "Mystic",
+    "release_date": "June 7, 2021"
+  },
+  {
+    "id": "jabari-panther",
+    "name": "Jabari Panther",
+    "class": "Skill",
+    "release_date": "April 15, 2021"
+  },
+  {
+    "id": "silver-centurion",
+    "name": "Silver Centurion",
+    "class": "Tech",
+    "release_date": "April 29, 2021"
+  },
+  {
+    "id": "shang-chi",
+    "name": "Shang-Chi",
+    "class": "Skill",
+    "release_date": "May 13, 2021"
+  },
+  {
+    "id": "mister-negative",
+    "name": "Mister Negative",
+    "class": "Science",
+    "release_date": "May 27, 2021"
+  },
+  {
+    "id": "purgatory",
+    "name": "Purgatory",
+    "class": "Mystic",
+    "release_date": "June 10, 2021"
+  },
+  {
+    "id": "the-overseer",
+    "name": "The Overseer",
+    "class": "Science",
+    "release_date": "June 24, 2021"
+  },
+  {
+    "id": "america-chavez",
+    "name": "America Chavez",
+    "class": "Mystic",
+    "release_date": "July 29, 2021"
+  },
+  {
+    "id": "hercules",
+    "name": "Hercules",
+    "class": "Cosmic",
+    "release_date": "July 15, 2021"
+  },
+  {
+    "id": "spider-man-2099",
+    "name": "Spider-Man 2099",
+    "class": "Science",
+    "release_date": "August 12, 2021"
+  },
+  {
+    "id": "peni-parker",
+    "name": "Peni Parker",
+    "class": "Tech",
+    "release_date": "August 26, 2021"
+  },
+  {
+    "id": "nimrod",
+    "name": "Nimrod",
+    "class": "Tech",
+    "release_date": "September 23, 2021"
+  },
+  {
+    "id": "kitty-pryde",
+    "name": "Kitty Pryde",
+    "class": "Mutant",
+    "release_date": "September 9, 2021"
+  },
+  {
+    "id": "summoned-symbiote",
+    "name": "Summoned Symbiote",
+    "class": "Combined",
+    "release_date": "October 6, 2021"
+  },
+  {
+    "id": "knull",
+    "name": "Knull",
+    "class": "Cosmic",
+    "release_date": "October 28, 2021"
+  },
+  {
+    "id": "anti-venom",
+    "name": "Anti-Venom",
+    "class": "Science",
+    "release_date": "October 14, 2021"
+  },
+  {
+    "id": "sersi",
+    "name": "Sersi",
+    "class": "Cosmic",
+    "release_date": "November 11, 2021"
+  },
+  {
+    "id": "ikaris",
+    "name": "Ikaris",
+    "class": "Cosmic",
+    "release_date": "November 25, 2021"
+  },
+  {
+    "id": "kraven",
+    "name": "Kraven",
+    "class": "Skill",
+    "release_date": "December 9, 2021"
+  },
+  {
+    "id": "toad",
+    "name": "Toad",
+    "class": "Mutant",
+    "release_date": "January 13, 2022"
+  },
+  {
+    "id": "sauron",
+    "name": "Sauron",
+    "class": "Mutant",
+    "release_date": "January 27, 2022"
+  },
+  {
+    "id": "captain-america-sam-wilson",
+    "name": "Captain America (Sam Wilson)",
+    "class": "Tech",
+    "release_date": "February 18, 2022"
+  },
+  {
+    "id": "misty-knight",
+    "name": "Misty Knight",
+    "class": "Skill",
+    "release_date": "March 3, 2022"
+  },
+  {
+    "id": "captain-britain",
+    "name": "Captain Britain",
+    "class": "Mutant",
+    "release_date": "March 17, 2022"
+  },
+  {
+    "id": "omega-sentinel",
+    "name": "Omega Sentinel",
+    "class": "Tech",
+    "release_date": "March 31, 2022"
+  },
+  {
+    "id": "black-cat",
+    "name": "Black Cat",
+    "class": "Skill",
+    "release_date": "April 14, 2022"
+  },
+  {
+    "id": "scorpion",
+    "name": "Scorpion",
+    "class": "Science",
+    "release_date": "April 28, 2022"
+  },
+  {
+    "id": "wong",
+    "name": "Wong",
+    "class": "Mystic",
+    "release_date": "May 26, 2022"
+  },
+  {
+    "id": "rintrah",
+    "name": "Rintrah",
+    "class": "Mystic",
+    "release_date": "May 12, 2022"
+  },
+  {
+    "id": "hulkling",
+    "name": "Hulkling",
+    "class": "Cosmic",
+    "release_date": "June 16, 2022"
+  },
+  {
+    "id": "wiccan",
+    "name": "Wiccan",
+    "class": "Mystic",
+    "release_date": "June 30, 2022"
+  },
+  {
+    "id": "valkyrie",
+    "name": "Valkyrie",
+    "class": "Skill",
+    "release_date": "July 28, 2022"
+  },
+  {
+    "id": "gorr",
+    "name": "Gorr",
+    "class": "Cosmic",
+    "release_date": "July 14, 2022"
+  },
+  {
+    "id": "galan",
+    "name": "Galan",
+    "class": "Cosmic",
+    "release_date": "August 11, 2022"
+  },
+  {
+    "id": "quicksilver",
+    "name": "Quicksilver",
+    "class": "Science",
+    "release_date": "August 26, 2022"
+  },
+  {
+    "id": "titania",
+    "name": "Titania",
+    "class": "Science",
+    "release_date": "September 15, 2022"
+  },
+  {
+    "id": "iron-man-infamous",
+    "name": "Iron Man (Infamous)",
+    "class": "Tech",
+    "release_date": "September 29, 2022"
+  },
+  {
+    "id": "spider-man-supreme",
+    "name": "Spider-Man (Supreme)",
+    "class": "Mystic",
+    "release_date": "October 13, 2022"
+  },
+  {
+    "id": "spot",
+    "name": "Spot",
+    "class": "Science",
+    "release_date": "October 27, 2022"
+  },
+  {
+    "id": "shuri",
+    "name": "Shuri",
+    "class": "Tech",
+    "release_date": "November 17, 2022"
+  },
+  {
+    "id": "attuma",
+    "name": "Attuma",
+    "class": "Skill",
+    "release_date": "December 1, 2022"
+  },
+  {
+    "id": "mantis",
+    "name": "Mantis",
+    "class": "Skill",
+    "release_date": "December 15, 2022"
+  },
+  {
+    "id": "absorbing-man",
+    "name": "Absorbing Man",
+    "class": "Mystic",
+    "release_date": "January 19, 2023"
+  },
+  {
+    "id": "baron-zemo",
+    "name": "Baron Zemo",
+    "class": "Skill",
+    "release_date": "January 26, 2023"
+  },
+  {
+    "id": "cassie-lang",
+    "name": "Cassie Lang",
+    "class": "Science",
+    "release_date": "February 16, 2023"
+  },
+  {
+    "id": "ant-man-future",
+    "name": "Ant-Man (Future)",
+    "class": "Tech",
+    "release_date": "March 2, 2023"
+  },
+  {
+    "id": "viv-vision",
+    "name": "Viv Vision",
+    "class": "Tech",
+    "release_date": "March 16, 2023"
+  },
+  {
+    "id": "kate-bishop",
+    "name": "Kate Bishop",
+    "class": "Skill",
+    "release_date": "March 30, 2023"
+  },
+  {
+    "id": "darkhawk",
+    "name": "Darkhawk",
+    "class": "Tech",
+    "release_date": "December 20, 2018"
+  },
+  {
+    "id": "doctor-strange",
+    "name": "Doctor Strange",
+    "class": "Mystic",
+    "release_date": "March 19, 2015"
+  },
+  {
+    "id": "shocker",
+    "name": "Shocker",
+    "class": "Tech",
+    "release_date": "April 13, 2023"
+  },
+  {
+    "id": "drax",
+    "name": "Drax",
+    "class": "Cosmic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "sandman",
+    "name": "Sandman",
+    "class": "Science",
+    "release_date": "April 27, 2023"
+  },
+  {
+    "id": "black-widow",
+    "name": "Black Widow",
+    "class": "Skill",
+    "release_date": "May 7, 2015"
+  },
+  {
+    "id": "hawkeye",
+    "name": "Hawkeye",
+    "class": "Skill",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "hulk",
+    "name": "Hulk",
+    "class": "Science",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "moondragon",
+    "name": "Moondragon",
+    "class": "Skill",
+    "release_date": "May 11, 2023"
+  },
+  {
+    "id": "punisher",
+    "name": "Punisher",
+    "class": "Skill",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "luke-cage",
+    "name": "Luke Cage",
+    "class": "Science",
+    "release_date": "November 26, 2015"
+  },
+  {
+    "id": "juggernaut",
+    "name": "Juggernaut",
+    "class": "Mystic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "kang-the-conqueror",
+    "name": "Kang the Conqueror",
+    "class": "Tech",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "adam-warlock",
+    "name": "Adam Warlock",
+    "class": "Cosmic",
+    "release_date": "May 25, 2023"
+  },
+  {
+    "id": "dani-moonstar",
+    "name": "Dani Moonstar",
+    "class": "Mutant",
+    "release_date": "June 15, 2023"
+  },
+  {
+    "id": "lady-deathstrike",
+    "name": "Lady Deathstrike",
+    "class": "Tech",
+    "release_date": "June 29, 2023"
+  },
+  {
+    "id": "night-thrasher",
+    "name": "Night Thrasher",
+    "class": "Skill",
+    "release_date": "December 6, 2018"
+  },
+  {
+    "id": "spider-gwen",
+    "name": "Spider-Gwen",
+    "class": "Science",
+    "release_date": "November 12, 2015"
+  },
+  {
+    "id": "silk",
+    "name": "Silk",
+    "class": "Science",
+    "release_date": "July 20, 2023"
+  },
+  {
+    "id": "kindred",
+    "name": "Kindred",
+    "class": "Mystic",
+    "release_date": "August 3, 2023"
+  },
+  {
+    "id": "vox",
+    "name": "Vox",
+    "class": "Cosmic",
+    "release_date": "August 31, 2023"
+  },
+  {
+    "id": "gladiator",
+    "name": "Gladiator",
+    "class": "Cosmic",
+    "release_date": "September 14, 2023"
+  },
+  {
+    "id": "photon",
+    "name": "Photon",
+    "class": "Science",
+    "release_date": "August 17, 2023"
+  },
+  {
+    "id": "werewolf-by-night",
+    "name": "Werewolf By Night",
+    "class": "Mystic",
+    "release_date": "October 27, 2023"
+  },
+  {
+    "id": "morbius",
+    "name": "Morbius",
+    "class": "Science",
+    "release_date": "October 13, 2023"
+  },
+  {
+    "id": "maestro-cosmic",
+    "name": "Maestro (Cosmic)",
+    "class": "Cosmic",
+    "release_date": "November 15, 2023"
+  },
+  {
+    "id": "kushala",
+    "name": "Kushala",
+    "class": "Mystic",
+    "release_date": "November 16, 2023"
+  },
+  {
+    "id": "chee-ilth",
+    "name": "Chee'ilth",
+    "class": "Skill",
+    "release_date": "November 30, 2023"
+  },
+  {
+    "id": "bullseye",
+    "name": "Bullseye",
+    "class": "Skill",
+    "release_date": "January 18, 2024"
+  },
+  {
+    "id": "white-tiger",
+    "name": "White Tiger",
+    "class": "Mystic",
+    "release_date": "February 1, 2024"
+  },
+  {
+    "id": "onslaught",
+    "name": "Onslaught",
+    "class": "Mutant",
+    "release_date": "December 14, 2023"
+  },
+  {
+    "id": "guillotine-deathless",
+    "name": "Guillotine (Deathless)",
+    "class": "Mystic",
+    "release_date": "December 20, 2023"
+  },
+  {
+    "id": "dust",
+    "name": "Dust",
+    "class": "Mutant",
+    "release_date": "February 29, 2024"
+  },
+  {
+    "id": "ironheart",
+    "name": "Ironheart",
+    "class": "Tech",
+    "release_date": "February 15, 2024"
+  },
+  {
+    "id": "the-serpent",
+    "name": "The Serpent",
+    "class": "Cosmic",
+    "release_date": "March 14, 2024"
+  },
+  {
+    "id": "the-destroyer",
+    "name": "The Destroyer",
+    "class": "Mystic",
+    "release_date": "March 28, 2024"
+  },
+  {
+    "id": "king-groot-deathless",
+    "name": "King Groot (Deathless)",
+    "class": "Cosmic",
+    "release_date": "April 4, 2024"
+  },
+  {
+    "id": "spider-punk",
+    "name": "Spider-Punk",
+    "class": "Science",
+    "release_date": "April 25, 2024"
+  },
+  {
+    "id": "prowler",
+    "name": "Prowler",
+    "class": "Tech",
+    "release_date": "April 11, 2024"
+  },
+  {
+    "id": "negasonic-teenage-warhead",
+    "name": "Negasonic Teenage Warhead",
+    "class": "Mutant",
+    "release_date": "May 16, 2024"
+  },
+  {
+    "id": "silver-sable",
+    "name": "Silver Sable",
+    "class": "Skill",
+    "release_date": "May 30, 2024"
+  },
+  {
+    "id": "arcade",
+    "name": "Arcade",
+    "class": "Tech",
+    "release_date": "June 13, 2024"
+  },
+  {
+    "id": "northstar",
+    "name": "Northstar",
+    "class": "Mutant",
+    "release_date": "June 27, 2024"
+  },
+  {
+    "id": "patriot",
+    "name": "Patriot",
+    "class": "Skill",
+    "release_date": "July 18, 2024"
+  },
+  {
+    "id": "the-leader",
+    "name": "The Leader",
+    "class": "Science",
+    "release_date": "August 1, 2024"
+  },
+  {
+    "id": "beta-ray-bill",
+    "name": "Beta Ray Bill",
+    "class": "Cosmic",
+    "release_date": "August 15, 2024"
+  },
+  {
+    "id": "enchantress",
+    "name": "Enchantress",
+    "class": "Mystic",
+    "release_date": "August 29, 2024"
+  },
+  {
+    "id": "count-nefaria",
+    "name": "Count Nefaria",
+    "class": "Science",
+    "release_date": "September 12, 2024"
+  },
+  {
+    "id": "shathra",
+    "name": "Shathra",
+    "class": "Mystic",
+    "release_date": "September 26, 2024"
+  },
+  {
+    "id": "scream",
+    "name": "Scream",
+    "class": "Cosmic",
+    "release_date": "October 17, 2024"
+  },
+  {
+    "id": "jack-o-lantern",
+    "name": "Jack O'Lantern",
+    "class": "Tech",
+    "release_date": "October 31, 2024"
+  },
+  {
+    "id": "she-hulk-deathless",
+    "name": "She-Hulk (Deathless)",
+    "class": "Science",
+    "release_date": "December 20, 2024"
+  },
+  {
+    "id": "dazzler",
+    "name": "Dazzler",
+    "class": "Mutant",
+    "release_date": "November 28, 2024"
+  },
+  {
+    "id": "spiral",
+    "name": "Spiral",
+    "class": "Mystic",
+    "release_date": "November 14, 2024"
+  },
+  {
+    "id": "henchpool",
+    "name": "Henchpool",
+    "class": "Combined",
+    "release_date": "November 13, 2024"
+  },
+  {
+    "id": "isophyne",
+    "name": "Isophyne",
+    "class": "Mystic",
+    "release_date": "December 19, 2024"
+  },
+  {
+    "id": "thanos-deathless",
+    "name": "Thanos (Deathless)",
+    "class": "Cosmic",
+    "release_date": "January 8, 2025"
+  },
+  {
+    "id": "okoye",
+    "name": "Okoye",
+    "class": "Skill",
+    "release_date": "January 16, 2025"
+  },
+  {
+    "id": "gentle",
+    "name": "Gentle",
+    "class": "Mutant",
+    "release_date": "January 30, 2025"
+  },
+  {
+    "id": "arnim-zola",
+    "name": "Arnim Zola",
+    "class": "Tech",
+    "release_date": "February 13, 2025"
+  },
+  {
+    "id": "falcon-joaqu-n-torres",
+    "name": "Falcon (Joaqu\u00edn Torres)",
+    "class": "Science",
+    "release_date": "February 27, 2025"
+  },
+  {
+    "id": "jean-grey",
+    "name": "Jean Grey",
+    "class": "Mutant",
+    "release_date": "March 13, 2025"
+  },
+  {
+    "id": "bastion",
+    "name": "Bastion",
+    "class": "Tech",
+    "release_date": "March 27, 2025"
+  },
+  {
+    "id": "spider-woman-jessica-drew",
+    "name": "Spider-Woman (Jessica Drew)",
+    "class": "Science",
+    "release_date": "April 17, 2025"
+  },
+  {
+    "id": "lumatrix",
+    "name": "Lumatrix",
+    "class": "Skill",
+    "release_date": "April 9, 2025"
+  },
+  {
+    "id": "dark-phoenix",
+    "name": "Dark Phoenix",
+    "class": "Cosmic",
+    "release_date": "May 7, 2025"
+  },
+  {
+    "id": "yelena-belova",
+    "name": "Yelena Belova",
+    "class": "Skill",
+    "release_date": "May 18, 2025"
+  },
+  {
+    "id": "vision-deathless",
+    "name": "Vision (Deathless)",
+    "class": "Tech",
+    "release_date": "July 20, 2024"
+  },
+  {
+    "id": "symbiote-supreme",
+    "name": "Symbiote Supreme",
+    "class": "Mystic",
+    "release_date": "October 11, 2018"
+  },
+  {
+    "id": "abomination",
+    "name": "Abomination",
+    "class": "Science",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "rhino",
+    "name": "Rhino",
+    "class": "Science",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "superior-iron-man",
+    "name": "Superior Iron Man",
+    "class": "Cosmic",
+    "release_date": "February 19, 2015"
+  },
+  {
+    "id": "nico-minoru",
+    "name": "Nico Minoru",
+    "class": "Mystic",
+    "release_date": "June 12, 2025"
+  },
+  {
+    "id": "karolina-dean",
+    "name": "Karolina Dean",
+    "class": "Cosmic",
+    "release_date": "June 26, 2025"
+  },
+  {
+    "id": "captain-america-wwii",
+    "name": "Captain America (WWII)",
+    "class": "Science",
+    "release_date": "July 2, 2015"
+  },
+  {
+    "id": "the-maker",
+    "name": "The Maker",
+    "class": "Tech",
+    "release_date": "July 10, 2025"
+  },
+  {
+    "id": "high-evolutionary",
+    "name": "High Evolutionary",
+    "class": "Science",
+    "release_date": "July 24, 2025"
+  },
+  {
+    "id": "doombot",
+    "name": "Doombot",
+    "class": "Combined",
+    "release_date": "July 24, 2025"
+  },
+  {
+    "id": "solvarch",
+    "name": "Solvarch",
+    "class": "Tech",
+    "release_date": "August 14, 2025"
+  },
+  {
+    "id": "cassandra-nova",
+    "name": "Cassandra Nova",
+    "class": "Mutant",
+    "release_date": "August 28, 2025"
+  },
+  {
+    "id": "silver-samurai",
+    "name": "Silver Samurai",
+    "class": "Mutant",
+    "release_date": "September 11, 2025"
+  },
+  {
+    "id": "mr-knight",
+    "name": "Mr. Knight",
+    "class": "Skill",
+    "release_date": "September 25, 2025"
+  },
+  {
+    "id": "anti-venomoid",
+    "name": "Anti-Venomoid",
+    "class": "Combined",
+    "release_date": "October 8, 2025"
+  },
+  {
+    "id": "dracula",
+    "name": "Dracula",
+    "class": "Mystic",
+    "release_date": "October 16, 2025"
+  },
+  {
+    "id": "franken-castle",
+    "name": "Franken-Castle",
+    "class": "Skill",
+    "release_date": "October 31, 2025"
+  },
+  {
+    "id": "rocket-raccoon",
+    "name": "Rocket Raccoon",
+    "class": "Tech",
+    "release_date": "March 5, 2015"
+  },
+  {
+    "id": "sentinelbot",
+    "name": "Sentinelbot",
+    "class": "Combined",
+    "release_date": "October 8, 2025"
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry",
+    "class": "Science",
+    "release_date": "January 4, 2018"
+  },
+  {
+    "id": "lizard",
+    "name": "Lizard",
+    "class": "Science",
+    "release_date": "November 13, 2025"
+  },
+  {
+    "id": "spider-man-pavitr-prabhakar",
+    "name": "Spider-Man (Pavitr Prabhakar)",
+    "class": "Mystic",
+    "release_date": "November 27, 2025"
+  },
+  {
+    "id": "imperiosa",
+    "name": "Imperiosa",
+    "class": "Cosmic",
+    "release_date": "December 11, 2025"
+  },
+  {
+    "id": "spider-slayer-j-jonah-jameson",
+    "name": "Spider-Slayer (J. Jonah Jameson)",
+    "class": "Tech",
+    "release_date": "January 15, 2026"
+  },
+  {
+    "id": "star-lord-stellar-forged",
+    "name": "Star-Lord (Stellar-Forged)",
+    "class": "Skill",
+    "release_date": "January 29, 2026"
+  },
+  {
+    "id": "storm",
+    "name": "Storm",
+    "class": "Mutant",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "the-champion",
+    "name": "The Champion",
+    "class": "Cosmic",
+    "release_date": "November 8, 2018"
+  },
+  {
+    "id": "m-baku",
+    "name": "M'Baku",
+    "class": "Skill",
+    "release_date": "February 12, 2026"
+  },
+  {
+    "id": "blue-marvel",
+    "name": "Blue Marvel",
+    "class": "Science",
+    "release_date": "February 26, 2026"
+  },
+  {
+    "id": "thor",
+    "name": "Thor",
+    "class": "Cosmic",
+    "release_date": "December 10, 2014"
+  },
+  {
+    "id": "venom-the-duck",
+    "name": "Venom the Duck",
+    "class": "Cosmic",
+    "release_date": "October 16, 2018"
+  },
+  {
+    "id": "madelyne-pryor",
+    "name": "Madelyne Pryor",
+    "class": "Mystic",
+    "release_date": "March 26, 2026"
+  },
+  {
+    "id": "pixie",
+    "name": "Pixie",
+    "class": "Mutant",
+    "release_date": "March 12, 2026"
+  },
+  {
+    "id": "void",
+    "name": "Void",
+    "class": "Science",
+    "release_date": "January 18, 2018"
+  },
+  {
+    "id": "doctor-bong",
+    "name": "Doctor Bong",
+    "class": "Skill",
+    "release_date": "April 30, 2026"
+  },
+  {
+    "id": "ruby-thursday",
+    "name": "Ruby Thursday",
+    "class": "Tech",
+    "release_date": "April 16, 2026"
+  },
+  {
+    "id": "blade-stellar-forged",
+    "name": "Blade (Stellar-Forged)",
+    "class": "Mystic",
+    "release_date": "May 4, 2026"
+  },
+  {
+    "id": "wave",
+    "name": "Wave",
+    "class": "Science",
+    "release_date": "May 28, 2026"
+  },
+  {
+    "id": "phyla-vell",
+    "name": "Phyla-Vell",
+    "class": "Cosmic",
+    "release_date": "June 11, 2026"
+  }
+]

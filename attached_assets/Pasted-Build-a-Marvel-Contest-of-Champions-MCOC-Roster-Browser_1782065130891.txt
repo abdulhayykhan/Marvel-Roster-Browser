@@ -1,0 +1,67 @@
+Build a Marvel Contest of Champions (MCOC) Roster Browser — a web app 
+displaying all 330 champions from the mobile game, with a game-UI inspired 
+visual theme built around class colors and rarity-style presentation.
+
+DATA: I'm attaching mcoc_champions_clean.json — 330 champions with fields: 
+id, name, class, release_date. Use this as the static dataset (no backend, 
+no external API).
+
+CLASS COLOR SYSTEM (use these exact colors throughout — borders, badges, 
+glow effects):
+- Cosmic: deep purple (#7B2FF7) with starfield/glow accent
+- Tech: cyan/electric blue (#00C2FF)
+- Mutant: gold/amber (#FFC107)
+- Skill: red (#E53935)
+- Science: green (#43A047)
+- Mystic: magenta/pink (#D81B60)
+- Combined: rainbow/gradient border (mix of all class colors) — these are 
+  fusion champions (Symbioid, Doombot, Sentinelbot, etc.)
+
+VISUAL STYLE — Game UI inspired:
+- Dark background (near-black, like a game inventory screen)
+- Each champion card has a colored border matching its class, with a subtle 
+  glow/shadow in that class color
+- Card hover state: slight scale-up + intensified glow, like selecting a 
+  unit in a mobile game
+- Class badge/chip on each card showing the class name + icon
+- Bold, slightly futuristic/gaming font for headings (something like 
+  Orbitron, Rajdhani, or similar sci-fi display font from Google Fonts)
+- Card grid layout, responsive (2 cols mobile, 4-6 cols desktop)
+
+PAGES:
+1. Roster Browse page (/)
+   - Header: "MCOC CHAMPION ROSTER" title
+   - Search bar (filter by name, real-time)
+   - Class filter chips: All, Cosmic, Tech, Mutant, Skill, Science, Mystic, 
+     Combined — each chip colored to match its class, active state = filled
+   - Sort dropdown: by name (A-Z), by release date (newest/oldest)
+   - Champion count display ("330 Champions")
+   - Responsive grid of champion cards: name, class badge, release date
+
+2. Champion Detail page (/champion/:id)
+   - Large header with champion name, class badge with glow effect
+   - Release date displayed prominently
+   - Since this is a static roster dataset without bios/abilities, include 
+     a placeholder section "FULL PROFILE COMING SOON" styled as a 
+     game-loading/locked-content panel, OR generate a brief flavor-text 
+     style description based on the champion name and class (clearly 
+     marked as a placeholder, not claimed as official game data)
+   - Back button to roster
+
+ADDITIONAL FEATURES:
+- "Random Champion" button on browse page
+- Stats bar showing breakdown count per class (e.g. "Cosmic: 58 | Tech: 52 
+  | Mutant: 51...")
+- Timeline/release filter: optionally filter by release year
+
+NO real champion portrait images needed for v1 — use a clean placeholder 
+treatment instead: large initials or a class-icon silhouette on a dark 
+card background, styled consistently with the class color system (similar 
+concept to "DE" for Deadpool, "TH" for Thor style initials, but with the 
+game-UI glow treatment instead of neobrutalist blocks).
+
+TECH STACK: Use whatever Replit's default React/Vite setup recommends. No 
+backend required, no auth, fully static dataset bundled into the app.
+
+Important: This is a FAN PROJECT not affiliated with Marvel, Disney, or 
+Kabam (the MCOC game developer) — include a small disclaimer in the footer.

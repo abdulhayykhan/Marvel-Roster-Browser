@@ -80,7 +80,7 @@ export default function RosterPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground hex-bg">
       {/* Header */}
       <header className="pt-12 pb-6 px-4 text-center border-b border-border/40 relative overflow-hidden bg-card/50">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(123,47,247,0.1)_0%,rgba(0,0,0,0)_50%)] pointer-events-none" />
@@ -184,12 +184,12 @@ export default function RosterPage() {
               <motion.div
                 key={champion.id}
                 layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.2, delay: Math.min(idx * 0.02, 0.2) }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                transition={{ duration: 0.25, delay: Math.min(idx * 0.025, 0.5) }}
               >
-                <ChampionCard champion={champion} />
+                <ChampionCard champion={champion} index={idx} />
               </motion.div>
             ))}
           </AnimatePresence>

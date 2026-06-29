@@ -4,7 +4,7 @@ A full-stack TypeScript monorepo for browsing, filtering, and analyzing Marvel C
 
 ## 🌟 Live Demo
 
-**URL**: [https://marvel-roster-browser-ahkofficial10.replit.app](https://marvel-roster-browser-ahkofficial10.replit.app)
+**URL**: [https://marvel-roster-browser-ahkofficial10.replit.app](https://marvel-roster-browser--ahkofficial10.replit.app)
 
 ## 📋 Table of Contents
 

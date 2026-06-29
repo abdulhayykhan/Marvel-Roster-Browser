@@ -4,20 +4,20 @@ A full-stack TypeScript monorepo for browsing, filtering, and analyzing Marvel C
 
 ## 🌟 Live Demo
 
-**URL**: https://marvel-roster-browser-ahkofficial10.replit.app
+**URL**: [https://marvel-roster-browser-ahkofficial10.replit.app](https://marvel-roster-browser-ahkofficial10.replit.app)
 
 ## 📋 Table of Contents
 
-* [Overview](#overview)
-* [Features](#features)
-* [Tech Stack](#tech-stack)
-* [Project Structure](#project-structure)
-* [Getting Started](#getting-started)
-* [Components Overview](#components-overview)
-* [Data Model](#data-model)
-* [Styling & Design System](#styling--design-system)
-* [Deployment](#deployment)
-* [Contributing](#contributing)
+* [Overview](https://www.google.com/search?q=%23overview)
+* [Features](https://www.google.com/search?q=%23features)
+* [Tech Stack](https://www.google.com/search?q=%23tech-stack)
+* [Project Structure](https://www.google.com/search?q=%23project-structure)
+* [Getting Started](https://www.google.com/search?q=%23getting-started)
+* [Components Overview](https://www.google.com/search?q=%23components-overview)
+* [Data Model](https://www.google.com/search?q=%23data-model)
+* [Styling & Design System](https://www.google.com/search?q=%23styling--design-system)
+* [Deployment](https://www.google.com/search?q=%23deployment)
+* [Contributing](https://www.google.com/search?q=%23contributing)
 
 ## 🎯 Overview
 
@@ -36,7 +36,7 @@ Marvel Contest of Champions Roster Browser is a robust, full-stack application. 
 
 ### 🎨 Design & UI
 
-* **Component Library**: Integrates `shadcn/ui` for accessible, customizable components.[cite: 1]
+* **Component Library**: Integrates `shadcn/ui` for accessible, customizable components.
 * **Class-Based Theming**: Dynamic UI colors matching official MCOC champion classes.
 * **Responsive Layouts**: Adapts seamlessly from mobile screens to desktop monitors.
 * **Image Proxies**: Optimized fetching and caching for champion portraits.
@@ -49,34 +49,34 @@ Marvel Contest of Champions Roster Browser is a robust, full-stack application. 
 
 ### 🛠 Technical Features
 
-* **Monorepo Architecture**: Managed via `pnpm` workspaces for isolated but linked packages.[cite: 1]
-* **API Generation**: Orval and Zod automatically generate React Query hooks and types from the OpenAPI spec.[cite: 1]
+* **Monorepo Architecture**: Managed via `pnpm` workspaces for isolated but linked packages.
+* **API Generation**: Orval and Zod automatically generate React Query hooks and types from the OpenAPI spec.
 * **Type Safety**: End-to-end TypeScript integration.
-* **Database ORM**: Drizzle ORM manages database schemas and queries.[cite: 1]
+* **Database ORM**: Drizzle ORM manages database schemas and queries.
 
 ## 🚀 Tech Stack
 
 ### Frontend Framework
 
 * **React** - UI construction.
-* **TypeScript** - Strict type checking.[cite: 1]
-* **Vite** - High-performance build tooling.[cite: 1]
+* **TypeScript** - Strict type checking.
+* **Vite** - High-performance build tooling.
 
 ### Backend & Data
 
-* **Node.js** - API server runtime.[cite: 1]
-* **Drizzle ORM** - Type-safe database interactions.[cite: 1]
-* **OpenAPI** - Centralized API contract mapping.[cite: 1]
+* **Node.js** - API server runtime.
+* **Drizzle ORM** - Type-safe database interactions.
+* **OpenAPI** - Centralized API contract mapping.
 
 ### Styling & UI
 
-* **Tailwind CSS** - Utility-first styling.[cite: 1]
-* **shadcn/ui** - Unstyled, customizable component system.[cite: 1]
+* **Tailwind CSS** - Utility-first styling.
+* **shadcn/ui** - Unstyled, customizable component system.
 
 ### Development Tools
 
-* **pnpm** - Fast, disk-space-efficient package manager.[cite: 1]
-* **Orval / Zod** - API client and schema validation generation.[cite: 1]
+* **pnpm** - Fast, disk-space-efficient package manager.
+* **Orval / Zod** - API client and schema validation generation.
 
 ## 📁 Project Structure
 
@@ -94,9 +94,8 @@ Marvel Contest of Champions Roster Browser is a robust, full-stack application. 
 ├── pnpm-workspace.yaml     # Monorepo configuration
 └── package.json            # Root dependencies
 
-```
 
-*[cite: 1]*
+```
 
 ## 🛠 Getting Started
 
@@ -108,26 +107,29 @@ Marvel Contest of Champions Roster Browser is a robust, full-stack application. 
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/abdulhayykhan/marvel-roster-browser.git
 cd marvel-roster-browser
 
+
 ```
 
-
 2. **Install dependencies**
+
 ```bash
 pnpm install
 
+
 ```
 
-
 3. **Start development servers**
+
 ```bash
 pnpm run dev
 
-```
 
+```
 
 4. **Access the application**
 Navigate to `http://localhost:5173` (Frontend) or `http://localhost:3000` (API).
@@ -136,19 +138,19 @@ Navigate to `http://localhost:5173` (Frontend) or `http://localhost:3000` (API).
 
 ### Core Pages
 
-* **RosterPage (`/`)**: Main grid displaying champion cards with class filters and search.[cite: 1]
-* **ChampionDetailPage (`/champions/:id`)**: Deep-dive view for individual champion statistics.[cite: 1]
+* **RosterPage (`/`)**: Main grid displaying champion cards with class filters and search.
+* **ChampionDetailPage (`/champions/:id`)**: Deep-dive view for individual champion statistics.
 
 ### UI Components
 
-* **ChampionCard**: Displays portrait, name, and base class. Built with `shadcn/ui` Card.[cite: 1]
-* **ClassFilterChip**: Interactive toggles for filtering the roster grid by MCOC classes.[cite: 1]
-* **StatsBar**: Visual indicator for health, attack, and defensive metrics.[cite: 1]
+* **ChampionCard**: Displays portrait, name, and base class. Built with `shadcn/ui` Card.
+* **ClassFilterChip**: Interactive toggles for filtering the roster grid by MCOC classes.
+* **StatsBar**: Visual indicator for health, attack, and defensive metrics.
 
 ### Data Management
 
-* **api-client-react**: Custom fetching hooks autogenerated from the OpenAPI spec. Prevents manual fetch boilerplate.[cite: 1]
-* **imageProxy**: Utility to handle cross-origin image loading for wiki portraits.[cite: 1]
+* **api-client-react**: Custom fetching hooks autogenerated from the OpenAPI spec. Prevents manual fetch boilerplate.
+* **imageProxy**: Utility to handle cross-origin image loading for wiki portraits.
 
 ## 🗂 Data Model
 
@@ -168,17 +170,18 @@ Champion data adheres to strict Zod schemas generated from OpenAPI.
   abilities: string[];
 }
 
+
 ```
 
 ## 🎨 Styling & Design System
 
 ### Design Tokens
 
-Built heavily on Tailwind CSS with specific utility extensions for MCOC classes found in `src/utils/classColors.ts`.[cite: 1]
+Built heavily on Tailwind CSS with specific utility extensions for MCOC classes found in `src/utils/classColors.ts`.
 
 ### UI Elements
 
-* Extensively utilizes `shadcn/ui` primitives (`accordion`, `dialog`, `drawer`, `sheet`, `toast`).[cite: 1]
+* Extensively utilizes `shadcn/ui` primitives (`accordion`, `dialog`, `drawer`, `sheet`, `toast`).
 * Clean, data-dense layouts emphasizing champion artwork and readable statistics.
 
 ## 🌐 Deployment
@@ -187,8 +190,8 @@ Built heavily on Tailwind CSS with specific utility extensions for MCOC classes 
 
 Configured for automated deployments.
 
-* `vercel.json` included for seamless Vercel frontend hosting.[cite: 1]
-* Native Replit configuration (`.replit`, `.replitignore`) for instant cloud environment spin-up.[cite: 1]
+* `vercel.json` included for seamless Vercel frontend hosting.
+* Native Replit configuration (`.replit`, `.replitignore`) for instant cloud environment spin-up.
 
 ## 🤝 Contributing
 
@@ -220,4 +223,4 @@ For technical support or questions about the project:
 ---
 
 Released under the **MIT License**.
-**Built with ❤️ using Replit by [Abdul Hayy Khan](https://www.linkedin.com/in/abdul-hayy-khan/)**
+**Built with ❤️ using Replit by [Abdul Hayy Khan**](https://www.linkedin.com/in/abdul-hayy-khan/)
